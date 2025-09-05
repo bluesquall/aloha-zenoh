@@ -16,6 +16,7 @@ pip install eclipse-zenoh
 ### publish & subscribe example
 Follow along with [the official `first-app` instructions][first-app].
 
+> !NOTE: If you are running the publisher & subscriber scripts in separate shells, you will need to activate the `venv` in each of those shells. There's probably a way to do this automagically for a `tmux` session or when within a specific directory. I should refresh that fuzzy recollection.
 
 ## build with `meson`
 ```
