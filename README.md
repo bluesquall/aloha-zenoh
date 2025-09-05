@@ -18,6 +18,17 @@ Follow along with [the official `first-app` instructions][first-app].
 
 > !NOTE: If you are running the publisher & subscriber scripts in separate shells, you will need to activate the `venv` in each of those shells. There's probably a way to do this automagically for a `tmux` session or when within a specific directory. I should refresh that fuzzy recollection.
 
+### store and query example
+
+Install[^i] the Zenoh router (`zenohd`):
+```
+
+```
+and start it with the configuration file from [the instructions][first-app]:
+```
+zenohd -c zenoh-myhome.json5
+```
+
 ## build with `meson`
 ```
 meson setup /tmp/build
@@ -26,5 +37,8 @@ meson compile -C /tmp/build
 _____________
 [zenoh]: https://zenoh.io
 [first-app]: https://zenoh.io/docs/getting-started/first-app/
-
+[install]: https://zenoh.io/docs/getting-started/installation/
 _____________
+[^i]: To install `zenohd`, adapt [the official instructions][install],
+  summarized & scripted in `install-zenoh.debian.sh`.
+
